@@ -1,5 +1,9 @@
-# colmap_sfm
 
+
+
+**Structure from Motion (SfM)** is a computer vision and photogrammetry technique used to reconstruct 3D structures from a series of 2D images taken from different viewpoints. It simultaneously estimates the 3D geometry of a scene and the camera poses (position and orientation) using image correspondences.
+
+**COLMAP** is an open-source software designed for Structure-from-Motion (SfM) and Multi-View Stereo (MVS) workflows. It is widely used in computer vision and photogrammetry for 3D reconstruction tasks. COLMAP automates the process of reconstructing sparse and dense 3D models from a set of overlapping images or video frames.
 
 ## 1. Install COLMAP
 ```
