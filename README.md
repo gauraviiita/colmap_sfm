@@ -91,3 +91,17 @@ points3D.bin
 
 points3D.ply
 
+
+# Visualize the .ply file
+
+two tools
+
+## Tool 1. Install CloudCompare
+```
+$ sudo snap install cloudcompare
+```
+
+## Tool 2. Install MeshLab via Snap
+```
+sudo snap install meshlab
+```
