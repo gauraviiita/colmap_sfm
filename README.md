@@ -55,10 +55,16 @@ $ colmap mapper \
 
 4. Export Files: After running the above steps, the following files will be generated in the sparse/ folder:
 
-cameras.bin: Contains camera intrinsic parameters.
-images.bin: Contains image data and camera poses.
-points3D.bin: Contains the sparse 3D point cloud.
+Check whether these files are present in the sparse/0 folder.
 
+$ ls sparse/0/
+
+cameras.bin: Contains intrinsic and extrinsic camera parameters.
+images.bin: Stores image metadata and pose information.
+points3D.bin: Contains the reconstructed 3D points.
+points3D.ply: A PLY file representing the reconstructed 3D points.
+
+------------------------
 
 $colmap model_converter \
     --input_path sparse/0/ \
