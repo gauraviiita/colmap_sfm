@@ -41,7 +41,6 @@ $ colmap mapper \
     --image_path frames/ \
     --output_path sparse/
 
-
 4. Export Files: After running the above steps, the following files will be generated in the sparse/ folder:
 
 cameras.bin: Contains camera intrinsic parameters.
@@ -55,6 +54,13 @@ $colmap model_converter \
     --output_type PLY
 
 ```
+
+5. Undistort Images: This step converts the camera model to PINHOLE or SIMPLE_PINHOLE. Use:
+```
+colmap image_undistorter --image_path images/ --input_path sparse/ --output_path undistorted/ --output_type COLMAP
+```
+
+
 ## Verify files
 
 The output folder will now contain the following:
